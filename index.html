@@ -118,13 +118,13 @@
 
     <!-- 네이버 지도 생성 스크립트 -->
     <script>
-        var location = new naver.maps.LatLng(37.578685, 126.8687308);
+        var mapLocation = new naver.maps.LatLng(37.578685, 126.8687308);
         var map = new naver.maps.Map('map', {
-            center: location,
+            center: mapLocation,
             zoom: 17
         });
         var marker = new naver.maps.Marker({
-            position: location,
+            position: mapLocation,
             map: map
         });
         var infoWindow = new naver.maps.InfoWindow({
